@@ -25,7 +25,7 @@ with tab_data:
 
 
     # Filtres 
-    gender = st.selectbox("Genre", options=['', 'Male', 'Female', 'Other'])
+    gender = st.selectbox("Genre", options=['', 'Male', 'Female'])
     age_max = st.slider('Âge max.', min_value=0, max_value=100, step=1)
     stroke = st.selectbox('Historique AVC', options=['', '0', '1'])
 
@@ -67,4 +67,8 @@ with tab_vis:
     
 
 with tab_stats:
-    st.title('**Statistiques**')
+    st.header('**Statistiques**')
+
+
+    
+
