@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from stroke_api import filters
-
+from typing import Optional
 router = APIRouter()
 
 @router.get("/")
@@ -36,5 +36,14 @@ def get_patient_id(patient_id: int):
 #  Ajout de la route stats 
 
 @router.get('/stats/')
-def get_stats():
-    pass
+def get_stats(
+    gender: Optional[str] = None,
+    max_age: Optional[float] = None,
+    max_bmi: Optional[float] = None
+):
+    return filters.filter_stats(
+        stroke_data_df=filters.df,
+        gender=gender,
+        max_age=max_age,
+        max_bmi=max_bmi
+    )

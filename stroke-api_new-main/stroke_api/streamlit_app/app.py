@@ -25,3 +25,6 @@ with tab_vis:
                 y='bmi',
                 x_label='age',
                 y_label='bmi')
+
+with tab_stats:
+    st.title('**Statistiques**')
