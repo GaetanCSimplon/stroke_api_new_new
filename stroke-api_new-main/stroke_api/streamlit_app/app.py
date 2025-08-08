@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
+import plotly.express as px
 
 API_URL = "http://127.0.0.1:8000/patients/"
 
@@ -64,6 +65,22 @@ with tab_vis:
                     y='bmi',
                     x_label='age',
                     y_label='bmi')
+    with st.container(border=True):
+        df_avc_by_age = df.groupby('age_category', as_index=False)['stroke'].mean()
+        st.write('Taux d\'AVC selon la catégorie d\'âge')
+        fig = px.bar(data_frame=df_avc_by_age,
+                     x='age_category',
+                     y='stroke',
+                     labels={'stroke': 'Taux d\'AVC', 'age_category': 'Catégorie d\'âge'})
+        st.plotly_chart(fig, use_container_width=True)
+    with st.container(border=True):
+        df_avc_by_gender = df.groupby('gender', as_index=False)['stroke'].mean()
+        st.write('Taux d\'AVC selon le genre')
+        fig = px.bar(data_frame=df_avc_by_gender,
+                     x='gender',
+                     y='stroke',
+                     labels={'stroke': 'Taux d\'AVC', 'gender': 'Genre'})
+        st.plotly_chart(fig, use_container_width=True )
     
 
 with tab_stats:
