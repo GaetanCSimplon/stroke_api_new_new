@@ -7,7 +7,7 @@ df = pd.read_csv('df_final_test.csv')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 print(df)
 
-# Tester l'app avec :
+# Tester l'app avec :S
 # poetry run fastapi dev stroke_api/main.py
 # http://127.0.0.1:8000/docs : utiliser la fonctionnalité Try it out pour tester les routes
 
