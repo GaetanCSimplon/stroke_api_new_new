@@ -1,0 +1,7 @@
+site_name: Stroke Data App
+repo_url: https://github.com/GaetanCSimplon/stroke_api_new_new.git
+nav:
+  - Home: index.md
+  - About: about.md
+  - Ressource: ressource.md
+theme: readthedocs
