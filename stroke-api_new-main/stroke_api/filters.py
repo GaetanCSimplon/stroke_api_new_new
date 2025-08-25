@@ -32,10 +32,31 @@ def filter_id(stroke_data_df: pd.DataFrame, id: int) -> Optional[dict]:
     return filtered_df.to_dict(orient='records')[0] 
 # Ensuite faire appel à ces fonctions dans le fichier api.py où sont définies les routes.
 def filter_stats(stroke_data_df: pd.DataFrame, 
-                gender: Optional[str] = None, 
-                age: Optional[int] = None,
-                bmi: Optional[float] = None):
-    filtered_df = None
-    pass
+                 gender: Optional[str] = None, 
+                 max_age: Optional[float] = None,
+                 max_bmi: Optional[float] = None) -> dict:
+    
+    # Étape 1 : filtrage
+    filtered_df = stroke_data_df.copy()
+    
+    if gender:
+        filtered_df = filtered_df[filtered_df['gender'] == gender]
+    
+    if max_age:
+        filtered_df = filtered_df[filtered_df['age'] <= max_age]
+    
+    if max_bmi:
+        filtered_df = filtered_df[filtered_df['bmi'] <= max_bmi]
+    
+    # Étape 2 : statistiques (sur les données filtrées)
+    stats = {
+        "total_patients": len(filtered_df),
+        "avg_age": round(filtered_df["age"].mean(), 2),
+        "avg_bmi": round(filtered_df["bmi"].mean(), 2),
+        "stroke_rate": round(filtered_df["stroke"].mean(), 4),  # Moyenne de 0/1 = taux d’AVC
+        "gender_distribution": filtered_df["gender"].value_counts(normalize=True).round(2).to_dict()
+    }
+    
+    return stats
 # Ajouter les fonctions de filtrage pour les autres routes.
 
