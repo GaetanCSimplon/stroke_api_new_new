@@ -27,7 +27,8 @@ with tab_data:
 
     # Filtres 
     gender = st.selectbox("Genre", options=['', 'Male', 'Female'])
-    age_max = st.slider('Âge max.', min_value=0, max_value=100, step=1)
+    # age_max = st.slider('Âge max.', min_value=0, max_value=100, step=1)
+    age_max = st.select_slider('Âge max.', options=df['age'])
     stroke = st.selectbox('Historique AVC', options=['', '0', '1'])
 
     # Paramètrage API
