@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./stroke-api_new-main/stroke_api/streamlit_app"
+    ]
+}

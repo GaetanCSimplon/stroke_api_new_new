@@ -3,14 +3,13 @@ nav:
   - Home: index.md
   - Ressource: ressource.md
   - About: about.md
+
 theme: readthedocs
 
 plugins:
-  - search:
-    lang: fr
+  - search
   - mkdocstrings:
-    handlers:
-      python:
-        options:
-          doctring_style: google
-          show_source: true
+      handlers:
+        python:
+          options:
+            show_source: true
