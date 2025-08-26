@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Stroke Data App", page_icon="🩺")
+st.set_page_config(page_title="Stroke Data App")
 
 st.title("Stroke Data App")
 
