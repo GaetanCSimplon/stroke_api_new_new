@@ -1,3 +1,3 @@
 __pycache__/
 *.pyc
-stroke_api/site
+/site

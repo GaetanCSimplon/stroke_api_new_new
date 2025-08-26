@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Ressource - Stroke Data App</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Ressource";
+        var mkdocs_page_input_path = "ressource.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Stroke Data App
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Ressource</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnalites">Fonctionnalités</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stroke_api.filters">filters</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stroke_api.filters.filter_id">filter_id</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stroke_api.filters.filter_patient">filter_patient</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stroke_api.filters.filter_stats">filter_stats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#streamlit_app.utils.data">data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#streamlit_app.utils.data.load_data">load_data</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Stroke Data App</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Ressource</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ressource">Ressource</h1>
+<h2 id="fonctionnalites">Fonctionnalités</h2>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="stroke_api.filters"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="stroke_api.filters.filter_id" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">filter_id</span><span class="p">(</span><span class="n">stroke_data_df</span><span class="p">,</span> <span class="nb">id</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Filters patients id</p>
+
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+              <b><code>stroke_data_df</code></b>
+                  (<code><span title="pandas.DataFrame">DataFrame</span></code>)
+              –
+              <div class="doc-md-description">
+                <p>Select dataframe</p>
+              </div>
+            </li>
+            <li>
+              <b><code>id</code></b>
+                  (<code><span title="int">int</span></code>)
+              –
+              <div class="doc-md-description">
+                <p>Integer </p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Returns:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+                  <code><span title="typing.Optional">Optional</span>[<span title="dict">dict</span>]</code>
+              –
+              <div class="doc-md-description">
+                <p>Optional[dict]: Dictionnary with data from patient id</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+            <details class="quote">
+              <summary>Source code in <code>filters.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">filter_id</span><span class="p">(</span><span class="n">stroke_data_df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="nb">id</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Filters patients id</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        stroke_data_df (pd.DataFrame): Select dataframe</span>
+<span class="sd">        id (int): Integer </span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Optional[dict]: Dictionnary with data from patient id</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">stroke_data_df</span><span class="p">[</span><span class="n">stroke_data_df</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="nb">id</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">filtered_df</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># Rien trouvé</span>
+
+    <span class="k">return</span> <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> 
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="stroke_api.filters.filter_patient" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">filter_patient</span><span class="p">(</span><span class="n">stroke_data_df</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gender</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_age</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Filters patients from a dataset</p>
+
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+              <b><code>stroke_data_df</code></b>
+                  (<code><span title="pandas.DataFrame">DataFrame</span></code>)
+              –
+              <div class="doc-md-description">
+                <p>Select dataframe</p>
+              </div>
+            </li>
+            <li>
+              <b><code>stroke</code></b>
+                  (<code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>2 values (1 = positive / 0 = negative). Defaults to None.</p>
+              </div>
+            </li>
+            <li>
+              <b><code>gender</code></b>
+                  (<code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>Either 'Male' or 'Female' . Defaults to None.</p>
+              </div>
+            </li>
+            <li>
+              <b><code>max_age</code></b>
+                  (<code><span title="typing.Optional">Optional</span>[<span title="int">int</span>]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>Between 0 and 100. Defaults to None.</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Returns:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+<b><code>dict</code></b>              –
+              <div class="doc-md-description">
+                <p>dictionary with selected data</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+            <details class="quote">
+              <summary>Source code in <code>filters.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">filter_patient</span><span class="p">(</span><span class="n">stroke_data_df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">stroke</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">gender</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">max_age</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Filters patients from a dataset</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        stroke_data_df (pd.DataFrame): Select dataframe</span>
+<span class="sd">        stroke (Optional[int], optional): 2 values (1 = positive / 0 = negative). Defaults to None.</span>
+<span class="sd">        gender (Optional[str], optional): Either &#39;Male&#39; or &#39;Female&#39; . Defaults to None.</span>
+<span class="sd">        max_age (Optional[int], optional): Between 0 and 100. Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: dictionary with selected data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">stroke_data_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">max_age</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">max_age</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">stroke</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;stroke&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">stroke</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">gender</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">gender</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">filtered_df</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;records&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="stroke_api.filters.filter_stats" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">filter_stats</span><span class="p">(</span><span class="n">stroke_data_df</span><span class="p">,</span> <span class="n">gender</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_age</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_bmi</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Shows differents stats from dataset</p>
+
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Parameters:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+              <b><code>stroke_data_df</code></b>
+                  (<code><span title="pandas.DataFrame">DataFrame</span></code>)
+              –
+              <div class="doc-md-description">
+                <p>Select a dataframe</p>
+              </div>
+            </li>
+            <li>
+              <b><code>gender</code></b>
+                  (<code><span title="typing.Optional">Optional</span>[<span title="str">str</span>]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>Select gender (Male or Female). Defaults to None.</p>
+              </div>
+            </li>
+            <li>
+              <b><code>max_age</code></b>
+                  (<code><span title="typing.Optional">Optional</span>[<span title="float">float</span>]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>Select age (Between 0 to 100). Defaults to None.</p>
+              </div>
+            </li>
+            <li>
+              <b><code>max_bmi</code></b>
+                  (<code><span title="typing.Optional">Optional</span>[<span title="float">float</span>]</code>, default:
+                      <code>None</code>
+)
+              –
+              <div class="doc-md-description">
+                <p>Select BMI (Between 16 to 70). Defaults to None.</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Returns:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+<b><code>dict</code></b>(                  <code><span title="dict">dict</span></code>
+)              –
+              <div class="doc-md-description">
+                <p>Dictionnary with all stats</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+            <details class="quote">
+              <summary>Source code in <code>filters.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span>
+<span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">filter_stats</span><span class="p">(</span><span class="n">stroke_data_df</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> 
+                 <span class="n">gender</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">max_age</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">max_bmi</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Shows differents stats from dataset</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        stroke_data_df (pd.DataFrame): Select a dataframe</span>
+<span class="sd">        gender (Optional[str], optional): Select gender (Male or Female). Defaults to None.</span>
+<span class="sd">        max_age (Optional[float], optional): Select age (Between 0 to 100). Defaults to None.</span>
+<span class="sd">        max_bmi (Optional[float], optional): Select BMI (Between 16 to 70). Defaults to None.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        dict: Dictionnary with all stats</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Étape 1 : filtrage</span>
+    <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">stroke_data_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">gender</span><span class="p">:</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;gender&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">gender</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">max_age</span><span class="p">:</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">max_age</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">max_bmi</span><span class="p">:</span>
+        <span class="n">filtered_df</span> <span class="o">=</span> <span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">&#39;bmi&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">max_bmi</span><span class="p">]</span>
+
+    <span class="c1"># Étape 2 : statistiques (sur les données filtrées)</span>
+    <span class="n">stats</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;total_patients&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">),</span>
+        <span class="s2">&quot;avg_age&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="s2">&quot;avg_bmi&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;bmi&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="s2">&quot;stroke_rate&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;stroke&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="mi">4</span><span class="p">),</span>  <span class="c1"># Moyenne de 0/1 = taux d’AVC</span>
+        <span class="s2">&quot;gender_distribution&quot;</span><span class="p">:</span> <span class="n">filtered_df</span><span class="p">[</span><span class="s2">&quot;gender&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">stats</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="streamlit_app.utils.data"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="streamlit_app.utils.data.load_data" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">load_data</span><span class="p">()</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Load data from a csv</p>
+
+
+<table class="field-list">
+  <colgroup>
+    <col class="field-name" />
+    <col class="field-body" />
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field">
+      <th class="field-name">Returns:</th>
+      <td class="field-body">
+        <ul class="first simple">
+            <li>
+<b><code>df</code></b>              –
+              <div class="doc-md-description">
+                <p>Creates a dataframe out of the csv</p>
+              </div>
+            </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+            <details class="quote">
+              <summary>Source code in <code>streamlit_app/utils/data.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">load_data</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Load data from a csv</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        df: Creates a dataframe out of the csv</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;df_final_test.csv&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s2">&quot;Unnamed: 0&quot;</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Unnamed: 0&quot;</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">df</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
