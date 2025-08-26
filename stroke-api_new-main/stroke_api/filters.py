@@ -14,6 +14,17 @@ print(df)
 # Ajout des fonctions de filtrage des données cf notebook 1
 
 def filter_patient(stroke_data_df: pd.DataFrame, stroke: Optional[int] = None, gender: Optional[str] = None, max_age: Optional[int] = None):
+    """Filters patients from a dataset
+
+    Args:
+        stroke_data_df (pd.DataFrame): Select dataframe
+        stroke (Optional[int], optional): 2 values (1 = positive / 0 = negative). Defaults to None.
+        gender (Optional[str], optional): Either 'Male' or 'Female' . Defaults to None.
+        max_age (Optional[int], optional): Between 0 and 100. Defaults to None.
+
+    Returns:
+        dict: dictionary with selected data
+    """
     filtered_df = stroke_data_df.copy()
     if max_age is not None:
         filtered_df = filtered_df[filtered_df['age'] <= max_age]
@@ -24,6 +35,15 @@ def filter_patient(stroke_data_df: pd.DataFrame, stroke: Optional[int] = None, g
     return filtered_df.to_dict(orient='records')
 
 def filter_id(stroke_data_df: pd.DataFrame, id: int) -> Optional[dict]:
+    """Filters patients id
+
+    Args:
+        stroke_data_df (pd.DataFrame): Select dataframe
+        id (int): Integer 
+
+    Returns:
+        Optional[dict]: Dictionnary with data from patient id
+    """
     filtered_df = stroke_data_df[stroke_data_df['id'] == id]
     
     if filtered_df.empty:
@@ -35,7 +55,17 @@ def filter_stats(stroke_data_df: pd.DataFrame,
                  gender: Optional[str] = None, 
                  max_age: Optional[float] = None,
                  max_bmi: Optional[float] = None) -> dict:
-    
+    """Shows differents stats from dataset
+
+    Args:
+        stroke_data_df (pd.DataFrame): Select a dataframe
+        gender (Optional[str], optional): Select gender (Male or Female). Defaults to None.
+        max_age (Optional[float], optional): Select age (Between 0 to 100). Defaults to None.
+        max_bmi (Optional[float], optional): Select BMI (Between 16 to 70). Defaults to None.
+
+    Returns:
+        dict: Dictionnary with all stats
+    """
     # Étape 1 : filtrage
     filtered_df = stroke_data_df.copy()
     

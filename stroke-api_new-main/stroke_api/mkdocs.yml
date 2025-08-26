@@ -1,0 +1,16 @@
+site_name: Stroke Data App
+nav:
+  - Home: index.md
+  - Ressource: ressource.md
+  - About: about.md
+theme: readthedocs
+
+plugins:
+  - search:
+    lang: fr
+  - mkdocstrings:
+    handlers:
+      python:
+        options:
+          doctring_style: google
+          show_source: true
