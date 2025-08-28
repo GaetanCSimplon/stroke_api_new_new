@@ -4,7 +4,7 @@ import requests
 
 from utils.data import load_data
 
-API_URL = "http://127.0.0.1:8001/patients/"
+API_URL = "http://127.0.0.1:8000/patients/"
 
 st.header('Rechercher des patients')
 
@@ -15,7 +15,7 @@ gender = st.selectbox("Genre", options=['', 'Male', 'Female'])
 # Penser à modifier les paramètres de age_max > 100 !!!
 # age_max = st.slider('Âge max.', min_value=0, max_value=100, step=1)
 # --- Slider de sélection de tranche d'âge, modification des paramètres
-age_max = st.select_slider('Âge max.', options=list(range(0,100)), value=(30,50))
+age_max = st.select_slider('Âge', options=list(range(0,100)), value=(30,50))
 stroke = st.selectbox('Historique AVC', options=['', '0', '1'])
 
 # Paramètrage API
