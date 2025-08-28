@@ -8,9 +8,10 @@ Ce projet contient les fichiers nécessaires au brief Stroke data - Développeme
 Démarrage de l'application
 
 - Démarrer l'API (local)
-poetry run fastapi dev main.py
-- Démarrer Streamlit (local)
+poetry run fastapi dev main.py (port 8000)
+- Démarrer Streamlit (local) (port 8501)
 poetry run streamlit run streamlit_app/app.py
+
 
 =====================
 
@@ -21,3 +22,4 @@ Etat d'avancement du projet
 - Fonctionnalités intégrée : ok
 - Documentation : Site généré mais pas déployé
 
+======================
